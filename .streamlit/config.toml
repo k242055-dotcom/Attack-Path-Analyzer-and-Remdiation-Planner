@@ -1,0 +1,18 @@
+[browser]
+gatherUsageStats = false
+
+[server]
+address = "127.0.0.1"
+headless = true
+maxUploadSize = 2
+
+[client]
+toolbarMode = "minimal"
+
+[theme]
+base = "light"
+primaryColor = "#126a70"
+backgroundColor = "#f7f9fc"
+secondaryBackgroundColor = "#eaf0f6"
+textColor = "#16283d"
+font = "sans serif"

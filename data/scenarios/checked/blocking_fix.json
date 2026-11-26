@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "blocking_fix",
+  "name": "Blocking Fix",
+  "description": "One permission-gated connection supplies the sole route to the archive.",
+  "privilege_levels": [
+    "guest",
+    "user",
+    "admin"
+  ],
+  "assets": [
+    {
+      "id": "entry",
+      "label": "Entry station"
+    },
+    {
+      "id": "archive",
+      "label": "Archive station"
+    }
+  ],
+  "services": [
+    {
+      "id": "service_archive",
+      "asset_id": "archive",
+      "label": "Modeled application service",
+      "enabled": true,
+      "login": false
+    }
+  ],
+  "connections": [
+    {
+      "id": "link_entry_archive",
+      "source_asset_id": "entry",
+      "destination_asset_id": "archive",
+      "enabled": true
+    }
+  ],
+  "weaknesses": [
+    {
+      "id": "weak_enter_archive",
+      "asset_id": "archive",
+      "service_id": "service_archive",
+      "granted_privilege": "user",
+      "enabled": true
+    }
+  ],
+  "credentials": [],
+  "permissions": [
+    {
+      "id": "permission_archive",
+      "source_asset_id": "entry",
+      "destination_asset_id": "archive",
+      "service_id": "service_archive",
+      "min_privilege": "user",
+      "enabled": true
+    }
+  ],
+  "actions": [
+    {
+      "id": "enter_archive",
+      "family": "vulnerable_service",
+      "source_asset_id": "entry",
+      "min_privilege": "user",
+      "cost": 2,
+      "connection_id": "link_entry_archive",
+      "service_id": "service_archive",
+      "weakness_id": "weak_enter_archive",
+      "permission_id": "permission_archive"
+    }
+  ],
+  "start": {
+    "asset_id": "entry",
+    "privilege_level": "user"
+  },
+  "goal": {
+    "asset_id": "archive",
+    "required_privilege": "user"
+  },
+  "metadata": {
+    "notes": "Hand-computed outcomes appear in data/checked-expectations.json under blocking_fix."
+  }
+}

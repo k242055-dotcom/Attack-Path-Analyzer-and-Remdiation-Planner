@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "id": "unreachable_goal",
+  "name": "Unreachable Goal",
+  "description": "The entry reaches the relay, while the relay-to-archive connection is disabled.",
+  "privilege_levels": [
+    "guest",
+    "user",
+    "admin"
+  ],
+  "assets": [
+    {
+      "id": "entry",
+      "label": "Entry station"
+    },
+    {
+      "id": "relay",
+      "label": "Relay station"
+    },
+    {
+      "id": "archive",
+      "label": "Archive station"
+    }
+  ],
+  "services": [
+    {
+      "id": "service_relay",
+      "asset_id": "relay",
+      "label": "Modeled application service",
+      "enabled": true,
+      "login": false
+    },
+    {
+      "id": "service_archive",
+      "asset_id": "archive",
+      "label": "Modeled application service",
+      "enabled": true,
+      "login": false
+    }
+  ],
+  "connections": [
+    {
+      "id": "link_entry_relay",
+      "source_asset_id": "entry",
+      "destination_asset_id": "relay",
+      "enabled": true
+    },
+    {
+      "id": "link_relay_archive",
+      "source_asset_id": "relay",
+      "destination_asset_id": "archive",
+      "enabled": false
+    }
+  ],
+  "weaknesses": [
+    {
+      "id": "weak_enter_relay",
+      "asset_id": "relay",
+      "service_id": "service_relay",
+      "granted_privilege": "user",
+      "enabled": true
+    },
+    {
+      "id": "weak_cross_blocked_link",
+      "asset_id": "archive",
+      "service_id": "service_archive",
+      "granted_privilege": "user",
+      "enabled": true
+    }
+  ],
+  "credentials": [],
+  "permissions": [],
+  "actions": [
+    {
+      "id": "enter_relay",
+      "family": "vulnerable_service",
+      "source_asset_id": "entry",
+      "min_privilege": "user",
+      "cost": 1,
+      "connection_id": "link_entry_relay",
+      "service_id": "service_relay",
+      "weakness_id": "weak_enter_relay"
+    },
+    {
+      "id": "cross_blocked_link",
+      "family": "vulnerable_service",
+      "source_asset_id": "relay",
+      "min_privilege": "user",
+      "cost": 1,
+      "connection_id": "link_relay_archive",
+      "service_id": "service_archive",
+      "weakness_id": "weak_cross_blocked_link"
+    }
+  ],
+  "start": {
+    "asset_id": "entry",
+    "privilege_level": "user"
+  },
+  "goal": {
+    "asset_id": "archive",
+    "required_privilege": "user"
+  },
+  "metadata": {
+    "notes": "Hand-computed outcomes appear in data/checked-expectations.json under unreachable_goal."
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "id": "cost_tradeoff",
+  "name": "Cost Trade-Off",
+  "description": "A costly direct rule competes with two lower-effort rules through the relay.",
+  "privilege_levels": [
+    "guest",
+    "user",
+    "admin"
+  ],
+  "assets": [
+    {
+      "id": "entry",
+      "label": "Entry station"
+    },
+    {
+      "id": "relay",
+      "label": "Relay station"
+    },
+    {
+      "id": "archive",
+      "label": "Archive station"
+    }
+  ],
+  "services": [
+    {
+      "id": "service_archive",
+      "asset_id": "archive",
+      "label": "Modeled application service",
+      "enabled": true,
+      "login": false
+    },
+    {
+      "id": "service_relay",
+      "asset_id": "relay",
+      "label": "Modeled application service",
+      "enabled": true,
+      "login": false
+    }
+  ],
+  "connections": [
+    {
+      "id": "link_entry_archive",
+      "source_asset_id": "entry",
+      "destination_asset_id": "archive",
+      "enabled": true
+    },
+    {
+      "id": "link_entry_relay",
+      "source_asset_id": "entry",
+      "destination_asset_id": "relay",
+      "enabled": true
+    },
+    {
+      "id": "link_relay_archive",
+      "source_asset_id": "relay",
+      "destination_asset_id": "archive",
+      "enabled": true
+    }
+  ],
+  "weaknesses": [
+    {
+      "id": "weak_a_direct",
+      "asset_id": "archive",
+      "service_id": "service_archive",
+      "granted_privilege": "user",
+      "enabled": true
+    },
+    {
+      "id": "weak_b_relay",
+      "asset_id": "relay",
+      "service_id": "service_relay",
+      "granted_privilege": "user",
+      "enabled": true
+    },
+    {
+      "id": "weak_c_forward",
+      "asset_id": "archive",
+      "service_id": "service_archive",
+      "granted_privilege": "user",
+      "enabled": true
+    }
+  ],
+  "credentials": [],
+  "permissions": [],
+  "actions": [
+    {
+      "id": "a_direct",
+      "family": "vulnerable_service",
+      "source_asset_id": "entry",
+      "min_privilege": "user",
+      "cost": 5,
+      "connection_id": "link_entry_archive",
+      "service_id": "service_archive",
+      "weakness_id": "weak_a_direct"
+    },
+    {
+      "id": "b_relay",
+      "family": "vulnerable_service",
+      "source_asset_id": "entry",
+      "min_privilege": "user",
+      "cost": 1,
+      "connection_id": "link_entry_relay",
+      "service_id": "service_relay",
+      "weakness_id": "weak_b_relay"
+    },
+    {
+      "id": "c_forward",
+      "family": "vulnerable_service",
+      "source_asset_id": "relay",
+      "min_privilege": "user",
+      "cost": 1,
+      "connection_id": "link_relay_archive",
+      "service_id": "service_archive",
+      "weakness_id": "weak_c_forward"
+    }
+  ],
+  "start": {
+    "asset_id": "entry",
+    "privilege_level": "user"
+  },
+  "goal": {
+    "asset_id": "archive",
+    "required_privilege": "user"
+  },
+  "metadata": {
+    "notes": "Hand-computed outcomes appear in data/checked-expectations.json under cost_tradeoff."
+  }
+}

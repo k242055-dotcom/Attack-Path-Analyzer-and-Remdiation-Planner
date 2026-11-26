@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "id": "simple_path",
+  "name": "Simple Path",
+  "description": "A declared weak service, a source-local capability and a local privilege rule form the only route to the requested archive privilege.",
+  "privilege_levels": [
+    "guest",
+    "user",
+    "admin"
+  ],
+  "assets": [
+    {
+      "id": "entry",
+      "label": "Entry station"
+    },
+    {
+      "id": "relay",
+      "label": "Relay station"
+    },
+    {
+      "id": "archive",
+      "label": "Archive station"
+    }
+  ],
+  "services": [
+    {
+      "id": "service_relay",
+      "asset_id": "relay",
+      "label": "Modeled application service",
+      "enabled": true,
+      "login": false
+    },
+    {
+      "id": "login_archive",
+      "asset_id": "archive",
+      "label": "Modeled login service",
+      "enabled": true,
+      "login": true
+    }
+  ],
+  "connections": [
+    {
+      "id": "link_entry_relay",
+      "source_asset_id": "entry",
+      "destination_asset_id": "relay",
+      "enabled": true
+    },
+    {
+      "id": "link_relay_archive",
+      "source_asset_id": "relay",
+      "destination_asset_id": "archive",
+      "enabled": true
+    }
+  ],
+  "weaknesses": [
+    {
+      "id": "weak_enter_relay",
+      "asset_id": "relay",
+      "service_id": "service_relay",
+      "granted_privilege": "user",
+      "enabled": true
+    },
+    {
+      "id": "weak_raise_archive",
+      "asset_id": "archive",
+      "service_id": null,
+      "granted_privilege": "admin",
+      "enabled": true
+    }
+  ],
+  "credentials": [
+    {
+      "id": "cap_relay_archive",
+      "source_asset_id": "relay",
+      "min_privilege": "user",
+      "enabled": true,
+      "authorizations": [
+        {
+          "service_id": "login_archive",
+          "granted_privilege": "user"
+        }
+      ]
+    }
+  ],
+  "permissions": [],
+  "actions": [
+    {
+      "id": "enter_relay",
+      "family": "vulnerable_service",
+      "source_asset_id": "entry",
+      "min_privilege": "guest",
+      "cost": 2,
+      "connection_id": "link_entry_relay",
+      "service_id": "service_relay",
+      "weakness_id": "weak_enter_relay"
+    },
+    {
+      "id": "open_archive",
+      "family": "credential_login",
+      "source_asset_id": "relay",
+      "min_privilege": "guest",
+      "cost": 1,
+      "connection_id": "link_relay_archive",
+      "service_id": "login_archive",
+      "credential_id": "cap_relay_archive"
+    },
+    {
+      "id": "raise_archive",
+      "family": "local_escalation",
+      "source_asset_id": "archive",
+      "min_privilege": "user",
+      "cost": 2,
+      "weakness_id": "weak_raise_archive"
+    }
+  ],
+  "start": {
+    "asset_id": "entry",
+    "privilege_level": "guest"
+  },
+  "goal": {
+    "asset_id": "archive",
+    "required_privilege": "admin"
+  },
+  "metadata": {
+    "notes": "Hand-computed outcomes appear in data/checked-expectations.json under simple_path."
+  }
+}

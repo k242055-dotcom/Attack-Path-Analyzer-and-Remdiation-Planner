@@ -1,0 +1,1338 @@
+{
+  "actions": [
+    {
+      "connection_id": "link-node-01-node-05",
+      "cost": 1,
+      "family": "vulnerable_service",
+      "id": "move-node-01-node-05",
+      "min_privilege": "guest",
+      "service_id": "service-node-05",
+      "source_asset_id": "node-01",
+      "weakness_id": "weakness-node-05"
+    },
+    {
+      "connection_id": "link-node-05-node-12",
+      "cost": 2,
+      "family": "vulnerable_service",
+      "id": "move-node-05-node-12",
+      "min_privilege": "guest",
+      "service_id": "service-node-12",
+      "source_asset_id": "node-05",
+      "weakness_id": "weakness-node-12"
+    },
+    {
+      "connection_id": "link-node-12-node-24",
+      "cost": 4,
+      "family": "vulnerable_service",
+      "id": "move-node-12-node-24",
+      "min_privilege": "guest",
+      "service_id": "service-node-24",
+      "source_asset_id": "node-12",
+      "weakness_id": "weakness-node-24"
+    },
+    {
+      "connection_id": "link-node-01-node-04",
+      "cost": 3,
+      "family": "vulnerable_service",
+      "id": "move-node-01-node-04",
+      "min_privilege": "guest",
+      "service_id": "service-node-04",
+      "source_asset_id": "node-01",
+      "weakness_id": "weakness-node-04"
+    },
+    {
+      "connection_id": "link-node-01-node-13",
+      "cost": 5,
+      "family": "vulnerable_service",
+      "id": "move-node-01-node-13",
+      "min_privilege": "guest",
+      "service_id": "service-node-13",
+      "source_asset_id": "node-01",
+      "weakness_id": "weakness-node-13"
+    },
+    {
+      "connection_id": "link-node-04-node-20",
+      "cost": 4,
+      "family": "vulnerable_service",
+      "id": "move-node-04-node-20",
+      "min_privilege": "guest",
+      "service_id": "service-node-20",
+      "source_asset_id": "node-04",
+      "weakness_id": "weakness-node-20"
+    },
+    {
+      "connection_id": "link-node-01-node-19",
+      "cost": 4,
+      "family": "vulnerable_service",
+      "id": "move-node-01-node-19",
+      "min_privilege": "guest",
+      "service_id": "service-node-19",
+      "source_asset_id": "node-01",
+      "weakness_id": "weakness-node-19"
+    },
+    {
+      "connection_id": "link-node-13-node-09",
+      "cost": 4,
+      "family": "vulnerable_service",
+      "id": "move-node-13-node-09",
+      "min_privilege": "guest",
+      "service_id": "service-node-09",
+      "source_asset_id": "node-13",
+      "weakness_id": "weakness-node-09"
+    },
+    {
+      "connection_id": "link-node-13-node-21",
+      "cost": 3,
+      "family": "vulnerable_service",
+      "id": "move-node-13-node-21",
+      "min_privilege": "guest",
+      "service_id": "service-node-21",
+      "source_asset_id": "node-13",
+      "weakness_id": "weakness-node-21"
+    },
+    {
+      "connection_id": "link-node-09-node-06",
+      "cost": 1,
+      "family": "vulnerable_service",
+      "id": "move-node-09-node-06",
+      "min_privilege": "guest",
+      "service_id": "service-node-06",
+      "source_asset_id": "node-09",
+      "weakness_id": "weakness-node-06"
+    },
+    {
+      "connection_id": "link-node-13-node-15",
+      "cost": 3,
+      "family": "vulnerable_service",
+      "id": "move-node-13-node-15",
+      "min_privilege": "guest",
+      "service_id": "service-node-15",
+      "source_asset_id": "node-13",
+      "weakness_id": "weakness-node-15"
+    },
+    {
+      "connection_id": "link-node-21-node-07",
+      "cost": 4,
+      "family": "vulnerable_service",
+      "id": "move-node-21-node-07",
+      "min_privilege": "guest",
+      "service_id": "service-node-07",
+      "source_asset_id": "node-21",
+      "weakness_id": "weakness-node-07"
+    },
+    {
+      "connection_id": "link-node-19-node-08",
+      "cost": 4,
+      "family": "vulnerable_service",
+      "id": "move-node-19-node-08",
+      "min_privilege": "guest",
+      "service_id": "service-node-08",
+      "source_asset_id": "node-19",
+      "weakness_id": "weakness-node-08"
+    },
+    {
+      "connection_id": "link-node-15-node-02",
+      "cost": 1,
+      "family": "vulnerable_service",
+      "id": "move-node-15-node-02",
+      "min_privilege": "guest",
+      "service_id": "service-node-02",
+      "source_asset_id": "node-15",
+      "weakness_id": "weakness-node-02"
+    },
+    {
+      "connection_id": "link-node-06-node-22",
+      "cost": 1,
+      "family": "vulnerable_service",
+      "id": "move-node-06-node-22",
+      "min_privilege": "guest",
+      "service_id": "service-node-22",
+      "source_asset_id": "node-06",
+      "weakness_id": "weakness-node-22"
+    },
+    {
+      "connection_id": "link-node-09-node-03",
+      "cost": 3,
+      "family": "vulnerable_service",
+      "id": "move-node-09-node-03",
+      "min_privilege": "guest",
+      "service_id": "service-node-03",
+      "source_asset_id": "node-09",
+      "weakness_id": "weakness-node-03"
+    },
+    {
+      "connection_id": "link-node-09-node-23",
+      "cost": 1,
+      "family": "vulnerable_service",
+      "id": "move-node-09-node-23",
+      "min_privilege": "guest",
+      "service_id": "service-node-23",
+      "source_asset_id": "node-09",
+      "weakness_id": "weakness-node-23"
+    },
+    {
+      "connection_id": "link-node-22-node-17",
+      "cost": 4,
+      "family": "vulnerable_service",
+      "id": "move-node-22-node-17",
+      "min_privilege": "guest",
+      "service_id": "service-node-17",
+      "source_asset_id": "node-22",
+      "weakness_id": "weakness-node-17"
+    },
+    {
+      "connection_id": "link-node-01-node-18",
+      "cost": 5,
+      "family": "vulnerable_service",
+      "id": "move-node-01-node-18",
+      "min_privilege": "guest",
+      "service_id": "service-node-18",
+      "source_asset_id": "node-01",
+      "weakness_id": "weakness-node-18"
+    },
+    {
+      "connection_id": "link-node-23-node-10",
+      "cost": 4,
+      "family": "vulnerable_service",
+      "id": "move-node-23-node-10",
+      "min_privilege": "guest",
+      "service_id": "service-node-10",
+      "source_asset_id": "node-23",
+      "weakness_id": "weakness-node-10"
+    },
+    {
+      "connection_id": "link-node-04-node-14",
+      "cost": 2,
+      "family": "vulnerable_service",
+      "id": "move-node-04-node-14",
+      "min_privilege": "guest",
+      "service_id": "service-node-14",
+      "source_asset_id": "node-04",
+      "weakness_id": "weakness-node-14"
+    },
+    {
+      "connection_id": "link-node-18-node-11",
+      "cost": 3,
+      "family": "vulnerable_service",
+      "id": "move-node-18-node-11",
+      "min_privilege": "guest",
+      "service_id": "service-node-11",
+      "source_asset_id": "node-18",
+      "weakness_id": "weakness-node-11"
+    },
+    {
+      "connection_id": "link-node-11-node-16",
+      "cost": 4,
+      "family": "vulnerable_service",
+      "id": "move-node-11-node-16",
+      "min_privilege": "guest",
+      "service_id": "service-node-16",
+      "source_asset_id": "node-11",
+      "weakness_id": "weakness-node-16"
+    },
+    {
+      "connection_id": "link-node-22-node-18",
+      "cost": 5,
+      "family": "vulnerable_service",
+      "id": "move-node-22-node-18",
+      "min_privilege": "guest",
+      "permission_id": "policy-node-22-node-18",
+      "service_id": "service-node-18",
+      "source_asset_id": "node-22",
+      "weakness_id": "weakness-node-18"
+    },
+    {
+      "connection_id": "link-node-05-node-08",
+      "cost": 4,
+      "family": "vulnerable_service",
+      "id": "move-node-05-node-08",
+      "min_privilege": "guest",
+      "permission_id": "policy-node-05-node-08",
+      "service_id": "service-node-08",
+      "source_asset_id": "node-05",
+      "weakness_id": "weakness-node-08"
+    },
+    {
+      "connection_id": "link-node-04-node-03",
+      "cost": 1,
+      "family": "vulnerable_service",
+      "id": "move-node-04-node-03",
+      "min_privilege": "guest",
+      "permission_id": "policy-node-04-node-03",
+      "service_id": "service-node-03",
+      "source_asset_id": "node-04",
+      "weakness_id": "weakness-node-03"
+    },
+    {
+      "connection_id": "link-node-21-node-20",
+      "cost": 1,
+      "family": "vulnerable_service",
+      "id": "move-node-21-node-20",
+      "min_privilege": "guest",
+      "permission_id": "policy-node-21-node-20",
+      "service_id": "service-node-20",
+      "source_asset_id": "node-21",
+      "weakness_id": "weakness-node-20"
+    },
+    {
+      "connection_id": "link-node-06-node-11",
+      "cost": 2,
+      "family": "vulnerable_service",
+      "id": "move-node-06-node-11",
+      "min_privilege": "guest",
+      "permission_id": "policy-node-06-node-11",
+      "service_id": "service-node-11",
+      "source_asset_id": "node-06",
+      "weakness_id": "weakness-node-11"
+    },
+    {
+      "connection_id": "link-node-17-node-23",
+      "cost": 3,
+      "family": "vulnerable_service",
+      "id": "move-node-17-node-23",
+      "min_privilege": "guest",
+      "permission_id": "policy-node-17-node-23",
+      "service_id": "service-node-23",
+      "source_asset_id": "node-17",
+      "weakness_id": "weakness-node-23"
+    },
+    {
+      "connection_id": "link-node-20-node-16",
+      "cost": 3,
+      "family": "vulnerable_service",
+      "id": "move-node-20-node-16",
+      "min_privilege": "guest",
+      "permission_id": "policy-node-20-node-16",
+      "service_id": "service-node-16",
+      "source_asset_id": "node-20",
+      "weakness_id": "weakness-node-16"
+    },
+    {
+      "connection_id": "link-node-15-node-22",
+      "cost": 4,
+      "family": "vulnerable_service",
+      "id": "move-node-15-node-22",
+      "min_privilege": "guest",
+      "permission_id": "policy-node-15-node-22",
+      "service_id": "service-node-22",
+      "source_asset_id": "node-15",
+      "weakness_id": "weakness-node-22"
+    },
+    {
+      "connection_id": "link-node-22-node-03",
+      "cost": 2,
+      "family": "vulnerable_service",
+      "id": "move-node-22-node-03",
+      "min_privilege": "guest",
+      "permission_id": "policy-node-22-node-03",
+      "service_id": "service-node-03",
+      "source_asset_id": "node-22",
+      "weakness_id": "weakness-node-03"
+    },
+    {
+      "connection_id": "link-node-11-node-17",
+      "cost": 2,
+      "family": "vulnerable_service",
+      "id": "move-node-11-node-17",
+      "min_privilege": "guest",
+      "permission_id": "policy-node-11-node-17",
+      "service_id": "service-node-17",
+      "source_asset_id": "node-11",
+      "weakness_id": "weakness-node-17"
+    },
+    {
+      "connection_id": "link-node-03-node-11",
+      "cost": 5,
+      "family": "vulnerable_service",
+      "id": "move-node-03-node-11",
+      "min_privilege": "guest",
+      "permission_id": "policy-node-03-node-11",
+      "service_id": "service-node-11",
+      "source_asset_id": "node-03",
+      "weakness_id": "weakness-node-11"
+    },
+    {
+      "connection_id": "link-node-20-node-17",
+      "cost": 2,
+      "family": "vulnerable_service",
+      "id": "move-node-20-node-17",
+      "min_privilege": "guest",
+      "permission_id": "policy-node-20-node-17",
+      "service_id": "service-node-17",
+      "source_asset_id": "node-20",
+      "weakness_id": "weakness-node-17"
+    },
+    {
+      "connection_id": "link-node-01-node-11",
+      "cost": 3,
+      "family": "vulnerable_service",
+      "id": "move-node-01-node-11",
+      "min_privilege": "guest",
+      "permission_id": "policy-node-01-node-11",
+      "service_id": "service-node-11",
+      "source_asset_id": "node-01",
+      "weakness_id": "weakness-node-11"
+    },
+    {
+      "connection_id": "link-node-10-node-11",
+      "cost": 4,
+      "family": "vulnerable_service",
+      "id": "move-node-10-node-11",
+      "min_privilege": "guest",
+      "permission_id": "policy-node-10-node-11",
+      "service_id": "service-node-11",
+      "source_asset_id": "node-10",
+      "weakness_id": "weakness-node-11"
+    },
+    {
+      "connection_id": "link-node-10-node-06",
+      "cost": 5,
+      "family": "vulnerable_service",
+      "id": "move-node-10-node-06",
+      "min_privilege": "guest",
+      "permission_id": "policy-node-10-node-06",
+      "service_id": "service-node-06",
+      "source_asset_id": "node-10",
+      "weakness_id": "weakness-node-06"
+    },
+    {
+      "connection_id": "link-node-12-node-08",
+      "cost": 1,
+      "family": "vulnerable_service",
+      "id": "move-node-12-node-08",
+      "min_privilege": "guest",
+      "permission_id": "policy-node-12-node-08",
+      "service_id": "service-node-08",
+      "source_asset_id": "node-12",
+      "weakness_id": "weakness-node-08"
+    },
+    {
+      "connection_id": "link-node-06-node-20",
+      "cost": 3,
+      "family": "vulnerable_service",
+      "id": "move-node-06-node-20",
+      "min_privilege": "guest",
+      "permission_id": "policy-node-06-node-20",
+      "service_id": "service-node-20",
+      "source_asset_id": "node-06",
+      "weakness_id": "weakness-node-20"
+    },
+    {
+      "connection_id": "link-node-16-node-20",
+      "cost": 5,
+      "family": "vulnerable_service",
+      "id": "move-node-16-node-20",
+      "min_privilege": "guest",
+      "permission_id": "policy-node-16-node-20",
+      "service_id": "service-node-20",
+      "source_asset_id": "node-16",
+      "weakness_id": "weakness-node-20"
+    },
+    {
+      "connection_id": "link-node-19-node-18",
+      "cost": 4,
+      "family": "vulnerable_service",
+      "id": "move-node-19-node-18",
+      "min_privilege": "guest",
+      "permission_id": "policy-node-19-node-18",
+      "service_id": "service-node-18",
+      "source_asset_id": "node-19",
+      "weakness_id": "weakness-node-18"
+    },
+    {
+      "connection_id": "link-node-07-node-19",
+      "cost": 4,
+      "family": "vulnerable_service",
+      "id": "move-node-07-node-19",
+      "min_privilege": "guest",
+      "permission_id": "policy-node-07-node-19",
+      "service_id": "service-node-19",
+      "source_asset_id": "node-07",
+      "weakness_id": "weakness-node-19"
+    }
+  ],
+  "assets": [
+    {
+      "id": "node-01",
+      "label": "Synthetic asset 01"
+    },
+    {
+      "id": "node-02",
+      "label": "Synthetic asset 02"
+    },
+    {
+      "id": "node-03",
+      "label": "Synthetic asset 03"
+    },
+    {
+      "id": "node-04",
+      "label": "Synthetic asset 04"
+    },
+    {
+      "id": "node-05",
+      "label": "Synthetic asset 05"
+    },
+    {
+      "id": "node-06",
+      "label": "Synthetic asset 06"
+    },
+    {
+      "id": "node-07",
+      "label": "Synthetic asset 07"
+    },
+    {
+      "id": "node-08",
+      "label": "Synthetic asset 08"
+    },
+    {
+      "id": "node-09",
+      "label": "Synthetic asset 09"
+    },
+    {
+      "id": "node-10",
+      "label": "Synthetic asset 10"
+    },
+    {
+      "id": "node-11",
+      "label": "Synthetic asset 11"
+    },
+    {
+      "id": "node-12",
+      "label": "Synthetic asset 12"
+    },
+    {
+      "id": "node-13",
+      "label": "Synthetic asset 13"
+    },
+    {
+      "id": "node-14",
+      "label": "Synthetic asset 14"
+    },
+    {
+      "id": "node-15",
+      "label": "Synthetic asset 15"
+    },
+    {
+      "id": "node-16",
+      "label": "Synthetic asset 16"
+    },
+    {
+      "id": "node-17",
+      "label": "Synthetic asset 17"
+    },
+    {
+      "id": "node-18",
+      "label": "Synthetic asset 18"
+    },
+    {
+      "id": "node-19",
+      "label": "Synthetic asset 19"
+    },
+    {
+      "id": "node-20",
+      "label": "Synthetic asset 20"
+    },
+    {
+      "id": "node-21",
+      "label": "Synthetic asset 21"
+    },
+    {
+      "id": "node-22",
+      "label": "Synthetic asset 22"
+    },
+    {
+      "id": "node-23",
+      "label": "Synthetic asset 23"
+    },
+    {
+      "id": "node-24",
+      "label": "Synthetic asset 24"
+    }
+  ],
+  "connections": [
+    {
+      "destination_asset_id": "node-05",
+      "enabled": true,
+      "id": "link-node-01-node-05",
+      "source_asset_id": "node-01"
+    },
+    {
+      "destination_asset_id": "node-12",
+      "enabled": true,
+      "id": "link-node-05-node-12",
+      "source_asset_id": "node-05"
+    },
+    {
+      "destination_asset_id": "node-24",
+      "enabled": true,
+      "id": "link-node-12-node-24",
+      "source_asset_id": "node-12"
+    },
+    {
+      "destination_asset_id": "node-04",
+      "enabled": true,
+      "id": "link-node-01-node-04",
+      "source_asset_id": "node-01"
+    },
+    {
+      "destination_asset_id": "node-13",
+      "enabled": true,
+      "id": "link-node-01-node-13",
+      "source_asset_id": "node-01"
+    },
+    {
+      "destination_asset_id": "node-20",
+      "enabled": true,
+      "id": "link-node-04-node-20",
+      "source_asset_id": "node-04"
+    },
+    {
+      "destination_asset_id": "node-19",
+      "enabled": true,
+      "id": "link-node-01-node-19",
+      "source_asset_id": "node-01"
+    },
+    {
+      "destination_asset_id": "node-09",
+      "enabled": true,
+      "id": "link-node-13-node-09",
+      "source_asset_id": "node-13"
+    },
+    {
+      "destination_asset_id": "node-21",
+      "enabled": true,
+      "id": "link-node-13-node-21",
+      "source_asset_id": "node-13"
+    },
+    {
+      "destination_asset_id": "node-06",
+      "enabled": true,
+      "id": "link-node-09-node-06",
+      "source_asset_id": "node-09"
+    },
+    {
+      "destination_asset_id": "node-15",
+      "enabled": true,
+      "id": "link-node-13-node-15",
+      "source_asset_id": "node-13"
+    },
+    {
+      "destination_asset_id": "node-07",
+      "enabled": true,
+      "id": "link-node-21-node-07",
+      "source_asset_id": "node-21"
+    },
+    {
+      "destination_asset_id": "node-08",
+      "enabled": true,
+      "id": "link-node-19-node-08",
+      "source_asset_id": "node-19"
+    },
+    {
+      "destination_asset_id": "node-02",
+      "enabled": true,
+      "id": "link-node-15-node-02",
+      "source_asset_id": "node-15"
+    },
+    {
+      "destination_asset_id": "node-22",
+      "enabled": true,
+      "id": "link-node-06-node-22",
+      "source_asset_id": "node-06"
+    },
+    {
+      "destination_asset_id": "node-03",
+      "enabled": true,
+      "id": "link-node-09-node-03",
+      "source_asset_id": "node-09"
+    },
+    {
+      "destination_asset_id": "node-23",
+      "enabled": true,
+      "id": "link-node-09-node-23",
+      "source_asset_id": "node-09"
+    },
+    {
+      "destination_asset_id": "node-17",
+      "enabled": true,
+      "id": "link-node-22-node-17",
+      "source_asset_id": "node-22"
+    },
+    {
+      "destination_asset_id": "node-18",
+      "enabled": true,
+      "id": "link-node-01-node-18",
+      "source_asset_id": "node-01"
+    },
+    {
+      "destination_asset_id": "node-10",
+      "enabled": true,
+      "id": "link-node-23-node-10",
+      "source_asset_id": "node-23"
+    },
+    {
+      "destination_asset_id": "node-14",
+      "enabled": true,
+      "id": "link-node-04-node-14",
+      "source_asset_id": "node-04"
+    },
+    {
+      "destination_asset_id": "node-11",
+      "enabled": true,
+      "id": "link-node-18-node-11",
+      "source_asset_id": "node-18"
+    },
+    {
+      "destination_asset_id": "node-16",
+      "enabled": true,
+      "id": "link-node-11-node-16",
+      "source_asset_id": "node-11"
+    },
+    {
+      "destination_asset_id": "node-18",
+      "enabled": true,
+      "id": "link-node-22-node-18",
+      "source_asset_id": "node-22"
+    },
+    {
+      "destination_asset_id": "node-08",
+      "enabled": true,
+      "id": "link-node-05-node-08",
+      "source_asset_id": "node-05"
+    },
+    {
+      "destination_asset_id": "node-03",
+      "enabled": true,
+      "id": "link-node-04-node-03",
+      "source_asset_id": "node-04"
+    },
+    {
+      "destination_asset_id": "node-20",
+      "enabled": true,
+      "id": "link-node-21-node-20",
+      "source_asset_id": "node-21"
+    },
+    {
+      "destination_asset_id": "node-11",
+      "enabled": true,
+      "id": "link-node-06-node-11",
+      "source_asset_id": "node-06"
+    },
+    {
+      "destination_asset_id": "node-23",
+      "enabled": true,
+      "id": "link-node-17-node-23",
+      "source_asset_id": "node-17"
+    },
+    {
+      "destination_asset_id": "node-16",
+      "enabled": true,
+      "id": "link-node-20-node-16",
+      "source_asset_id": "node-20"
+    },
+    {
+      "destination_asset_id": "node-22",
+      "enabled": true,
+      "id": "link-node-15-node-22",
+      "source_asset_id": "node-15"
+    },
+    {
+      "destination_asset_id": "node-03",
+      "enabled": true,
+      "id": "link-node-22-node-03",
+      "source_asset_id": "node-22"
+    },
+    {
+      "destination_asset_id": "node-17",
+      "enabled": true,
+      "id": "link-node-11-node-17",
+      "source_asset_id": "node-11"
+    },
+    {
+      "destination_asset_id": "node-11",
+      "enabled": true,
+      "id": "link-node-03-node-11",
+      "source_asset_id": "node-03"
+    },
+    {
+      "destination_asset_id": "node-17",
+      "enabled": true,
+      "id": "link-node-20-node-17",
+      "source_asset_id": "node-20"
+    },
+    {
+      "destination_asset_id": "node-11",
+      "enabled": true,
+      "id": "link-node-01-node-11",
+      "source_asset_id": "node-01"
+    },
+    {
+      "destination_asset_id": "node-11",
+      "enabled": true,
+      "id": "link-node-10-node-11",
+      "source_asset_id": "node-10"
+    },
+    {
+      "destination_asset_id": "node-06",
+      "enabled": true,
+      "id": "link-node-10-node-06",
+      "source_asset_id": "node-10"
+    },
+    {
+      "destination_asset_id": "node-08",
+      "enabled": true,
+      "id": "link-node-12-node-08",
+      "source_asset_id": "node-12"
+    },
+    {
+      "destination_asset_id": "node-20",
+      "enabled": true,
+      "id": "link-node-06-node-20",
+      "source_asset_id": "node-06"
+    },
+    {
+      "destination_asset_id": "node-20",
+      "enabled": true,
+      "id": "link-node-16-node-20",
+      "source_asset_id": "node-16"
+    },
+    {
+      "destination_asset_id": "node-18",
+      "enabled": true,
+      "id": "link-node-19-node-18",
+      "source_asset_id": "node-19"
+    },
+    {
+      "destination_asset_id": "node-19",
+      "enabled": true,
+      "id": "link-node-07-node-19",
+      "source_asset_id": "node-07"
+    }
+  ],
+  "credentials": [],
+  "description": "A disabled final weakness leaves the target unreachable.",
+  "goal": {
+    "asset_id": "node-24",
+    "required_privilege": "user"
+  },
+  "id": "case-11",
+  "metadata": {
+    "case_index": 11,
+    "generator_version": 1,
+    "pattern": "unreachable",
+    "seed": 42
+  },
+  "name": "Generated case 11 (unreachable)",
+  "permissions": [
+    {
+      "destination_asset_id": "node-18",
+      "enabled": true,
+      "id": "policy-node-22-node-18",
+      "min_privilege": "guest",
+      "service_id": "service-node-18",
+      "source_asset_id": "node-22"
+    },
+    {
+      "destination_asset_id": "node-08",
+      "enabled": true,
+      "id": "policy-node-05-node-08",
+      "min_privilege": "guest",
+      "service_id": "service-node-08",
+      "source_asset_id": "node-05"
+    },
+    {
+      "destination_asset_id": "node-03",
+      "enabled": true,
+      "id": "policy-node-04-node-03",
+      "min_privilege": "guest",
+      "service_id": "service-node-03",
+      "source_asset_id": "node-04"
+    },
+    {
+      "destination_asset_id": "node-20",
+      "enabled": true,
+      "id": "policy-node-21-node-20",
+      "min_privilege": "guest",
+      "service_id": "service-node-20",
+      "source_asset_id": "node-21"
+    },
+    {
+      "destination_asset_id": "node-11",
+      "enabled": true,
+      "id": "policy-node-06-node-11",
+      "min_privilege": "guest",
+      "service_id": "service-node-11",
+      "source_asset_id": "node-06"
+    },
+    {
+      "destination_asset_id": "node-23",
+      "enabled": true,
+      "id": "policy-node-17-node-23",
+      "min_privilege": "guest",
+      "service_id": "service-node-23",
+      "source_asset_id": "node-17"
+    },
+    {
+      "destination_asset_id": "node-16",
+      "enabled": true,
+      "id": "policy-node-20-node-16",
+      "min_privilege": "guest",
+      "service_id": "service-node-16",
+      "source_asset_id": "node-20"
+    },
+    {
+      "destination_asset_id": "node-22",
+      "enabled": false,
+      "id": "policy-node-15-node-22",
+      "min_privilege": "guest",
+      "service_id": "service-node-22",
+      "source_asset_id": "node-15"
+    },
+    {
+      "destination_asset_id": "node-03",
+      "enabled": true,
+      "id": "policy-node-22-node-03",
+      "min_privilege": "guest",
+      "service_id": "service-node-03",
+      "source_asset_id": "node-22"
+    },
+    {
+      "destination_asset_id": "node-17",
+      "enabled": true,
+      "id": "policy-node-11-node-17",
+      "min_privilege": "guest",
+      "service_id": "service-node-17",
+      "source_asset_id": "node-11"
+    },
+    {
+      "destination_asset_id": "node-11",
+      "enabled": true,
+      "id": "policy-node-03-node-11",
+      "min_privilege": "guest",
+      "service_id": "service-node-11",
+      "source_asset_id": "node-03"
+    },
+    {
+      "destination_asset_id": "node-17",
+      "enabled": false,
+      "id": "policy-node-20-node-17",
+      "min_privilege": "guest",
+      "service_id": "service-node-17",
+      "source_asset_id": "node-20"
+    },
+    {
+      "destination_asset_id": "node-11",
+      "enabled": false,
+      "id": "policy-node-01-node-11",
+      "min_privilege": "guest",
+      "service_id": "service-node-11",
+      "source_asset_id": "node-01"
+    },
+    {
+      "destination_asset_id": "node-11",
+      "enabled": true,
+      "id": "policy-node-10-node-11",
+      "min_privilege": "guest",
+      "service_id": "service-node-11",
+      "source_asset_id": "node-10"
+    },
+    {
+      "destination_asset_id": "node-06",
+      "enabled": true,
+      "id": "policy-node-10-node-06",
+      "min_privilege": "guest",
+      "service_id": "service-node-06",
+      "source_asset_id": "node-10"
+    },
+    {
+      "destination_asset_id": "node-08",
+      "enabled": true,
+      "id": "policy-node-12-node-08",
+      "min_privilege": "guest",
+      "service_id": "service-node-08",
+      "source_asset_id": "node-12"
+    },
+    {
+      "destination_asset_id": "node-20",
+      "enabled": false,
+      "id": "policy-node-06-node-20",
+      "min_privilege": "guest",
+      "service_id": "service-node-20",
+      "source_asset_id": "node-06"
+    },
+    {
+      "destination_asset_id": "node-20",
+      "enabled": false,
+      "id": "policy-node-16-node-20",
+      "min_privilege": "guest",
+      "service_id": "service-node-20",
+      "source_asset_id": "node-16"
+    },
+    {
+      "destination_asset_id": "node-18",
+      "enabled": false,
+      "id": "policy-node-19-node-18",
+      "min_privilege": "guest",
+      "service_id": "service-node-18",
+      "source_asset_id": "node-19"
+    },
+    {
+      "destination_asset_id": "node-19",
+      "enabled": true,
+      "id": "policy-node-07-node-19",
+      "min_privilege": "guest",
+      "service_id": "service-node-19",
+      "source_asset_id": "node-07"
+    }
+  ],
+  "privilege_levels": [
+    "guest",
+    "user",
+    "admin"
+  ],
+  "schema_version": 1,
+  "services": [
+    {
+      "asset_id": "node-01",
+      "enabled": true,
+      "id": "service-node-01",
+      "label": "Modeled service",
+      "login": true
+    },
+    {
+      "asset_id": "node-02",
+      "enabled": true,
+      "id": "service-node-02",
+      "label": "Modeled service",
+      "login": true
+    },
+    {
+      "asset_id": "node-03",
+      "enabled": true,
+      "id": "service-node-03",
+      "label": "Modeled service",
+      "login": true
+    },
+    {
+      "asset_id": "node-04",
+      "enabled": true,
+      "id": "service-node-04",
+      "label": "Modeled service",
+      "login": true
+    },
+    {
+      "asset_id": "node-05",
+      "enabled": true,
+      "id": "service-node-05",
+      "label": "Modeled service",
+      "login": true
+    },
+    {
+      "asset_id": "node-06",
+      "enabled": true,
+      "id": "service-node-06",
+      "label": "Modeled service",
+      "login": true
+    },
+    {
+      "asset_id": "node-07",
+      "enabled": true,
+      "id": "service-node-07",
+      "label": "Modeled service",
+      "login": true
+    },
+    {
+      "asset_id": "node-08",
+      "enabled": true,
+      "id": "service-node-08",
+      "label": "Modeled service",
+      "login": true
+    },
+    {
+      "asset_id": "node-09",
+      "enabled": true,
+      "id": "service-node-09",
+      "label": "Modeled service",
+      "login": true
+    },
+    {
+      "asset_id": "node-10",
+      "enabled": true,
+      "id": "service-node-10",
+      "label": "Modeled service",
+      "login": true
+    },
+    {
+      "asset_id": "node-11",
+      "enabled": true,
+      "id": "service-node-11",
+      "label": "Modeled service",
+      "login": true
+    },
+    {
+      "asset_id": "node-12",
+      "enabled": true,
+      "id": "service-node-12",
+      "label": "Modeled service",
+      "login": true
+    },
+    {
+      "asset_id": "node-13",
+      "enabled": true,
+      "id": "service-node-13",
+      "label": "Modeled service",
+      "login": true
+    },
+    {
+      "asset_id": "node-14",
+      "enabled": true,
+      "id": "service-node-14",
+      "label": "Modeled service",
+      "login": true
+    },
+    {
+      "asset_id": "node-15",
+      "enabled": true,
+      "id": "service-node-15",
+      "label": "Modeled service",
+      "login": true
+    },
+    {
+      "asset_id": "node-16",
+      "enabled": true,
+      "id": "service-node-16",
+      "label": "Modeled service",
+      "login": true
+    },
+    {
+      "asset_id": "node-17",
+      "enabled": true,
+      "id": "service-node-17",
+      "label": "Modeled service",
+      "login": true
+    },
+    {
+      "asset_id": "node-18",
+      "enabled": true,
+      "id": "service-node-18",
+      "label": "Modeled service",
+      "login": true
+    },
+    {
+      "asset_id": "node-19",
+      "enabled": true,
+      "id": "service-node-19",
+      "label": "Modeled service",
+      "login": true
+    },
+    {
+      "asset_id": "node-20",
+      "enabled": true,
+      "id": "service-node-20",
+      "label": "Modeled service",
+      "login": true
+    },
+    {
+      "asset_id": "node-21",
+      "enabled": true,
+      "id": "service-node-21",
+      "label": "Modeled service",
+      "login": true
+    },
+    {
+      "asset_id": "node-22",
+      "enabled": true,
+      "id": "service-node-22",
+      "label": "Modeled service",
+      "login": true
+    },
+    {
+      "asset_id": "node-23",
+      "enabled": true,
+      "id": "service-node-23",
+      "label": "Modeled service",
+      "login": true
+    },
+    {
+      "asset_id": "node-24",
+      "enabled": true,
+      "id": "service-node-24",
+      "label": "Modeled service",
+      "login": true
+    }
+  ],
+  "start": {
+    "asset_id": "node-01",
+    "privilege_level": "guest"
+  },
+  "weaknesses": [
+    {
+      "asset_id": "node-01",
+      "enabled": true,
+      "granted_privilege": "user",
+      "id": "weakness-node-01",
+      "service_id": "service-node-01"
+    },
+    {
+      "asset_id": "node-02",
+      "enabled": true,
+      "granted_privilege": "user",
+      "id": "weakness-node-02",
+      "service_id": "service-node-02"
+    },
+    {
+      "asset_id": "node-03",
+      "enabled": true,
+      "granted_privilege": "user",
+      "id": "weakness-node-03",
+      "service_id": "service-node-03"
+    },
+    {
+      "asset_id": "node-04",
+      "enabled": true,
+      "granted_privilege": "user",
+      "id": "weakness-node-04",
+      "service_id": "service-node-04"
+    },
+    {
+      "asset_id": "node-05",
+      "enabled": true,
+      "granted_privilege": "user",
+      "id": "weakness-node-05",
+      "service_id": "service-node-05"
+    },
+    {
+      "asset_id": "node-06",
+      "enabled": true,
+      "granted_privilege": "user",
+      "id": "weakness-node-06",
+      "service_id": "service-node-06"
+    },
+    {
+      "asset_id": "node-07",
+      "enabled": true,
+      "granted_privilege": "user",
+      "id": "weakness-node-07",
+      "service_id": "service-node-07"
+    },
+    {
+      "asset_id": "node-08",
+      "enabled": true,
+      "granted_privilege": "user",
+      "id": "weakness-node-08",
+      "service_id": "service-node-08"
+    },
+    {
+      "asset_id": "node-09",
+      "enabled": true,
+      "granted_privilege": "user",
+      "id": "weakness-node-09",
+      "service_id": "service-node-09"
+    },
+    {
+      "asset_id": "node-10",
+      "enabled": true,
+      "granted_privilege": "user",
+      "id": "weakness-node-10",
+      "service_id": "service-node-10"
+    },
+    {
+      "asset_id": "node-11",
+      "enabled": true,
+      "granted_privilege": "user",
+      "id": "weakness-node-11",
+      "service_id": "service-node-11"
+    },
+    {
+      "asset_id": "node-12",
+      "enabled": true,
+      "granted_privilege": "user",
+      "id": "weakness-node-12",
+      "service_id": "service-node-12"
+    },
+    {
+      "asset_id": "node-13",
+      "enabled": true,
+      "granted_privilege": "user",
+      "id": "weakness-node-13",
+      "service_id": "service-node-13"
+    },
+    {
+      "asset_id": "node-14",
+      "enabled": true,
+      "granted_privilege": "user",
+      "id": "weakness-node-14",
+      "service_id": "service-node-14"
+    },
+    {
+      "asset_id": "node-15",
+      "enabled": true,
+      "granted_privilege": "user",
+      "id": "weakness-node-15",
+      "service_id": "service-node-15"
+    },
+    {
+      "asset_id": "node-16",
+      "enabled": true,
+      "granted_privilege": "user",
+      "id": "weakness-node-16",
+      "service_id": "service-node-16"
+    },
+    {
+      "asset_id": "node-17",
+      "enabled": true,
+      "granted_privilege": "user",
+      "id": "weakness-node-17",
+      "service_id": "service-node-17"
+    },
+    {
+      "asset_id": "node-18",
+      "enabled": true,
+      "granted_privilege": "user",
+      "id": "weakness-node-18",
+      "service_id": "service-node-18"
+    },
+    {
+      "asset_id": "node-19",
+      "enabled": true,
+      "granted_privilege": "user",
+      "id": "weakness-node-19",
+      "service_id": "service-node-19"
+    },
+    {
+      "asset_id": "node-20",
+      "enabled": true,
+      "granted_privilege": "user",
+      "id": "weakness-node-20",
+      "service_id": "service-node-20"
+    },
+    {
+      "asset_id": "node-21",
+      "enabled": true,
+      "granted_privilege": "user",
+      "id": "weakness-node-21",
+      "service_id": "service-node-21"
+    },
+    {
+      "asset_id": "node-22",
+      "enabled": true,
+      "granted_privilege": "user",
+      "id": "weakness-node-22",
+      "service_id": "service-node-22"
+    },
+    {
+      "asset_id": "node-23",
+      "enabled": true,
+      "granted_privilege": "user",
+      "id": "weakness-node-23",
+      "service_id": "service-node-23"
+    },
+    {
+      "asset_id": "node-24",
+      "enabled": false,
+      "granted_privilege": "user",
+      "id": "weakness-node-24",
+      "service_id": "service-node-24"
+    }
+  ]
+}

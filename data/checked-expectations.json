@@ -1,0 +1,141 @@
+{
+  "simple_path": {
+    "trace": "Entry guest → relay user → archive user → archive admin. All three rules are required. Effort is 2 + 1 + 2 = 5.",
+    "BFS": {
+      "action_ids": [
+        "enter_relay",
+        "open_archive",
+        "raise_archive"
+      ],
+      "steps": 3,
+      "effort": 5
+    },
+    "UCS": {
+      "action_ids": [
+        "enter_relay",
+        "open_archive",
+        "raise_archive"
+      ],
+      "steps": 3,
+      "effort": 5
+    }
+  },
+  "cost_tradeoff": {
+    "trace": "The direct rule takes one step at effort 5. Entry → relay → archive uses two steps at effort 1 + 1 = 2.",
+    "BFS": {
+      "action_ids": [
+        "a_direct"
+      ],
+      "steps": 1,
+      "effort": 5
+    },
+    "UCS": {
+      "action_ids": [
+        "b_relay",
+        "c_forward"
+      ],
+      "steps": 2,
+      "effort": 2
+    }
+  },
+  "unreachable_goal": {
+    "trace": "Entry and relay user states are reachable. The disabled relay-to-archive connection blocks the only archive rule.",
+    "BFS": {
+      "action_ids": [],
+      "steps": null,
+      "effort": null
+    },
+    "UCS": {
+      "action_ids": [],
+      "steps": null,
+      "effort": null
+    }
+  },
+  "cycle": {
+    "trace": "The return from relay revisits entry user. The productive route is entry → relay → archive at effort 1 + 3 = 4.",
+    "BFS": {
+      "action_ids": [
+        "enter_relay",
+        "b_reach_archive"
+      ],
+      "steps": 2,
+      "effort": 4
+    },
+    "UCS": {
+      "action_ids": [
+        "enter_relay",
+        "b_reach_archive"
+      ],
+      "steps": 2,
+      "effort": 4
+    }
+  },
+  "blocking_fix": {
+    "trace": "The sole rule crosses link_entry_archive at effort 2. Disabling that link removes the route.",
+    "BFS": {
+      "action_ids": [
+        "enter_archive"
+      ],
+      "steps": 1,
+      "effort": 2
+    },
+    "UCS": {
+      "action_ids": [
+        "enter_archive"
+      ],
+      "steps": 1,
+      "effort": 2
+    },
+    "fix": {
+      "kind": "block_connection",
+      "record_id": "link_entry_archive",
+      "BFS": {
+        "action_ids": [],
+        "steps": null,
+        "effort": null
+      },
+      "UCS": {
+        "action_ids": [],
+        "steps": null,
+        "effort": null
+      }
+    }
+  },
+  "alternate_route": {
+    "trace": "The direct one-step route costs 2. Once its weakness is disabled, relay and its capability reach the archive in two steps at effort 3 + 1 = 4.",
+    "BFS": {
+      "action_ids": [
+        "a_direct"
+      ],
+      "steps": 1,
+      "effort": 2
+    },
+    "UCS": {
+      "action_ids": [
+        "a_direct"
+      ],
+      "steps": 1,
+      "effort": 2
+    },
+    "fix": {
+      "kind": "disable_weakness",
+      "record_id": "weak_a_direct",
+      "BFS": {
+        "action_ids": [
+          "b_relay",
+          "c_capability"
+        ],
+        "steps": 2,
+        "effort": 4
+      },
+      "UCS": {
+        "action_ids": [
+          "b_relay",
+          "c_capability"
+        ],
+        "steps": 2,
+        "effort": 4
+      }
+    }
+  }
+}
